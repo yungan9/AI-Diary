@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CallGPT } from "./api/gpt";
+import styled from "styled-components";
 import DiaryInput from "./components/DiaryInput";
 
 const dummyData = JSON.parse(
@@ -29,13 +30,22 @@ function App() {
   };
 
   return (
-    <>
+    <AppContainer>
       <DiaryInput isLoading={isLoading} onSubmit={handleSubmit} />
       <button onClick={handleClickAPICall}>gpt api call</button>
       <div>data:{JSON.stringify(data)}</div>
       <div>isLoading:{isLoading ? "loading..." : "fin"}</div>
-    </>
+    </AppContainer>
   );
 }
 
 export default App;
+
+const AppContainer = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+`;
