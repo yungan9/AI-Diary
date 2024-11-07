@@ -49,7 +49,14 @@ const DiaryDisplay = ({ data, isLoading }) => {
         <CardContent>{data.summary}</CardContent>
       </CardContainer>
 
-      <ThumbnailImage src={data.thumbnail} alt="Thumbnail" />
+      <ThumbnailImage
+        src={data.thumbnail}
+        alt="Thumbnail"
+        onError={(e) => {
+          e.target.src =
+            "https://i.pinimg.com/1200x/d9/3a/bd/d93abd8d203adbfdcaa864626df6e635.jpg";
+        }}
+      />
 
       <Divider />
       <CardContainer>
