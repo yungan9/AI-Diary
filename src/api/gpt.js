@@ -57,7 +57,6 @@ Use the Unsplash API (https://source.unsplash.com/1600x900/?). the query is just
     }),
   });
   const resData = await res.json();
-  console.log(">>resData", resData);
 
   const message = resData.choices[0].message.content;
 
