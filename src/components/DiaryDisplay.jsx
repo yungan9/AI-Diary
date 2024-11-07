@@ -55,7 +55,7 @@ const DiaryDisplay = ({ data, isLoading }) => {
       <CardContainer>
         <CardTitle>
           <HeartTwoTone twoToneColor="#FFB7B2" style={{ marginRight: "6px" }} />
-          감성일기장
+          일기장
         </CardTitle>
         <CardContent>{data.emotional_content}</CardContent>
       </CardContainer>

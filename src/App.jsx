@@ -50,9 +50,6 @@ function App() {
         onSubmit={handleSubmit}
       />
       <DiaryDisplay isLoading={isLoading} data={data} />
-      <button onClick={handleClickAPICall}>gpt api call</button>
-      <div>data:{JSON.stringify(data)}</div>
-      <div>isLoading:{isLoading ? "loading..." : "fin"}</div>
     </AppContainer>
   );
 }
