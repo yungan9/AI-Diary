@@ -12,7 +12,7 @@
   
 
 ### 🖥️ 배포 링크
-▶️ [AI 회고록](https://ai-diary-gpt.vercel.app/ "GPT 기반 회고록 써보기")
+▶️ [AI 회고록](https://ai-diary-b9iolx51z-yungan9s-projects.vercel.app "GPT 기반 회고록 써보기")
 
 
 ### 📷 페이지 미리보기
